@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/QuickSell/static/css/main.22cf388f.css",
-    "main.js": "/QuickSell/static/js/main.a75b2146.js",
+    "main.js": "/QuickSell/static/js/main.0582e224.js",
     "static/js/787.cda612ba.chunk.js": "/QuickSell/static/js/787.cda612ba.chunk.js",
     "static/media/suresh.png": "/QuickSell/static/media/suresh.424f5adcecb6ebd3389c.png",
     "static/media/anoopsharma.png": "/QuickSell/static/media/anoopsharma.8750473b915da8cfb9d4.png",
@@ -13,14 +13,13 @@
     "static/media/priority-1.png": "/QuickSell/static/media/priority-1.00d0cc8e4d8cbd725d6c.png",
     "static/media/loading.png": "/QuickSell/static/media/loading.77749fbfb8830545b0b5.png",
     "static/media/priority-2.png": "/QuickSell/static/media/priority-2.05a08e9d0f0e004e4fca.png",
-    "static/media/logo.svg": "/QuickSell/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/QuickSell/index.html",
     "main.22cf388f.css.map": "/QuickSell/static/css/main.22cf388f.css.map",
-    "main.a75b2146.js.map": "/QuickSell/static/js/main.a75b2146.js.map",
+    "main.0582e224.js.map": "/QuickSell/static/js/main.0582e224.js.map",
     "787.cda612ba.chunk.js.map": "/QuickSell/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22cf388f.css",
-    "static/js/main.a75b2146.js"
+    "static/js/main.0582e224.js"
   ]
 }
