@@ -38,27 +38,32 @@ const GroupBy = ({ tickets, groupBy, orderBy, users }) => {
   const status = [
     {
       icon: backlog,
-      name: "backlog",
+      name: "Backlog",
     },
     {
       icon: inprogress,
-      name: "inprogress",
+      name: "In progress",
     },
     {
       icon: todo,
-      name: "todo",
+      name: "Todo",
     },
     {
       icon: done,
-      name: "done",
+      name: "Done",
     },
     {
       icon: cancel,
-      name: "canceled",
+      name: "Canceled",
     },
   ];
 
   const priority = [
+    {
+      icon: priority0,
+      name: "No Priority",
+      number: 0,
+    },
     {
       icon: priority4,
       name: "Urgent",
@@ -79,22 +84,20 @@ const GroupBy = ({ tickets, groupBy, orderBy, users }) => {
       name: "Low",
       number: 1,
     },
-    {
-      icon: priority0,
-      name: "No Priority",
-      number: 0,
-    },
   ];
 
-  const getUserAvailability = (userId) => {
-    const user = users.find((user) => user.id === userId);
-    return user ? user.available : false;
-  };
+ 
 
   const updateFilteredTickets = () => {
     switch (groupBy) {
       case "priority":
-        const updatedFilteredPriority = priority.map((priorityItem) => ({
+        let updatedPriority = [...priority];
+
+        if (orderBy === "priority") {
+          updatedPriority.sort((a, b) => b.number - a.number);
+        }
+        
+        const updatedFilteredPriority = updatedPriority.map((priorityItem) => ({
           ...priorityItem,
           tickets: tickets
             .filter((ticket) => ticket.priority === priorityItem.number)
@@ -102,9 +105,11 @@ const GroupBy = ({ tickets, groupBy, orderBy, users }) => {
               if (orderBy === "title") {
                 return a.title.localeCompare(b.title);
               }
+              
               return 0;
             }),
         }));
+        
         setUpdatedFilteredTickets(updatedFilteredPriority);
         break;
       case "status":
@@ -114,7 +119,7 @@ const GroupBy = ({ tickets, groupBy, orderBy, users }) => {
             .filter(
               (ticket) =>
                 ticket.status.toLowerCase().split(" ").join("") ===
-                statusItem.name
+                statusItem.name.toLowerCase().split(" ").join("")
             )
             .sort((a, b) => {
               if (orderBy === "priority") {
@@ -179,7 +184,10 @@ const GroupBy = ({ tickets, groupBy, orderBy, users }) => {
                               ></div>
                             )}
                           </div>
-                          <div className="names">{data.name}</div>
+                          <div className="ticket-names">{data.name}</div>
+                          <div className="no-of-tickets">
+                            {data.tickets.length}
+                          </div>
                         </div>
                         <div className="data-options-div">
                           <div className="add-data"></div>

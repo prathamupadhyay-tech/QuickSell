@@ -29,17 +29,28 @@
   
     padding: 0.5em 0.8em;
 }
-
+.card-id{
+    color: grey;
+}
 
 /* title container styling */
 
 .title-container{
     display: flex;
     gap: 5px;
+    
     padding: 0em 0.8em;
-   
-  
+    
+    
 }
+.title-div{
+    display: block;
+    font-weight: 500;
+    align-items: center;
+   
+   
+}
+
 .title-icon-div{
     width: 30px;
     height: 30px;

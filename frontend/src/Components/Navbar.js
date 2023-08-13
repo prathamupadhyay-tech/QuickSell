@@ -8,7 +8,7 @@ const Navbar = ({ groupBy, setgroupBy, orderBy, setOrderBy }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = (isOpen) => {
-    console.log("Toggling isOpen to:", !isOpen);
+    
     setIsOpen(!isOpen);
   };
 
@@ -36,7 +36,7 @@ const Navbar = ({ groupBy, setgroupBy, orderBy, setOrderBy }) => {
               <div
                 className="arrow"
                 onClick={() => {
-                  console.log("heelo");
+                 
                   toggle(isOpen);
                 }}
               ></div>

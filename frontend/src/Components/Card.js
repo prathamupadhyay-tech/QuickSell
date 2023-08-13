@@ -36,6 +36,7 @@ const Card = ({
     const users = user.find((user) => user.id === userId);
     return users;
   };
+
   return (
     <>
       <div className="main-card-container">
@@ -43,7 +44,11 @@ const Card = ({
           <p className="card-id">{cardId}</p>
           {groupBy !== "user" && (
             <div className="card-owner">
-              <img className="owner-avatar" src={getUserAvailability(usersId).icon} alt="" />
+              <img
+                className="owner-avatar"
+                src={getUserAvailability(usersId).icon}
+                alt=""
+              />
               <div
                 className={`availability ${
                   getUserAvailability(usersId).available ? "available" : ""
@@ -60,7 +65,7 @@ const Card = ({
           )}
 
           <div className="title-div">
-            <p className="card-title">{cardTitle}</p>
+           {cardTitle}
           </div>
         </div>
         <div className="tag-container">

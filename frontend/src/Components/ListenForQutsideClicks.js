@@ -10,7 +10,7 @@ export default function listenForOutsideClicks(
   return () => {
     if (listening) return;
 
-    if (!menuRef?.current) return; // Check for menuRef validity
+    if (!menuRef?.current) return; 
     setListening(true);
     ["click", "touchstart"].forEach((type) => {
       document.addEventListener(type, (evt) => {

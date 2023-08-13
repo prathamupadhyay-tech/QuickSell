@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
 .main-group-conatainer{
     display: flex;
     width: 100%;
@@ -36,6 +40,8 @@
     gap: 1em;
     padding: 1em;
 }
+
+/* heading section  */
 .headings{
 
 
@@ -63,9 +69,9 @@
 }
 .group-icons{
     border-radius: 50%;
-   
-    width: 25px; 
-    height: 25px; 
+    
+    width: 20px; 
+    height: 20px; 
     position: relative;
     object-fit: cover;
 }
@@ -97,6 +103,15 @@
     
     z-index: 1; 
 }
+.ticket-names{
+    font-weight: 500;
+    
+}
+.no-of-tickets{
+    font-weight: 400;
+    color: grey;
+}
+/* additional options section  */
 .data-options-div{
     display: flex;
     align-items: center;
