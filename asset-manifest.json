@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/QuickSell/static/css/main.de3eef9d.css",
+    "main.js": "/QuickSell/static/js/main.9edc5444.js",
+    "static/js/787.cda612ba.chunk.js": "/QuickSell/static/js/787.cda612ba.chunk.js",
+    "static/media/suresh.png": "/QuickSell/static/media/suresh.424f5adcecb6ebd3389c.png",
+    "static/media/anoopsharma.png": "/QuickSell/static/media/anoopsharma.8750473b915da8cfb9d4.png",
+    "static/media/yogesh.png": "/QuickSell/static/media/yogesh.bc27d3dc778ded4dc5c0.png",
+    "static/media/Avatar.png": "/QuickSell/static/media/Avatar.5b6adb8e38ee506fde52.png",
+    "static/media/Partial.png": "/QuickSell/static/media/Partial.bc8d75e85f830d267ee7.png",
+    "static/media/select.png": "/QuickSell/static/media/select.7df2d007cc06d7a00f25.png",
+    "static/media/cancel.png": "/QuickSell/static/media/cancel.dcf94367e9379947f510.png",
+    "static/media/record.png": "/QuickSell/static/media/record.06062b4d524b33de0004.png",
+    "static/media/priority-1.png": "/QuickSell/static/media/priority-1.00d0cc8e4d8cbd725d6c.png",
+    "static/media/loading.png": "/QuickSell/static/media/loading.77749fbfb8830545b0b5.png",
+    "static/media/priority-2.png": "/QuickSell/static/media/priority-2.05a08e9d0f0e004e4fca.png",
+    "static/media/logo.svg": "/QuickSell/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/QuickSell/index.html",
+    "main.de3eef9d.css.map": "/QuickSell/static/css/main.de3eef9d.css.map",
+    "main.9edc5444.js.map": "/QuickSell/static/js/main.9edc5444.js.map",
+    "787.cda612ba.chunk.js.map": "/QuickSell/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de3eef9d.css",
+    "static/js/main.9edc5444.js"
+  ]
+}
