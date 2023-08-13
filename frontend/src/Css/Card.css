@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Card styling */
+.main-card-container{
+    width: 20em;
+    height: auto;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 4px 0px rgb(194, 194, 194);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: scale 0.2s ease ;
+}
+.main-card-container:hover{
+    scale: 1.02;
+
+}
+
+/* id-container styling */
+
+.id-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0.5em 0.8em;
+}
+
+
+/* title container styling */
+
+.title-container{
+    display: flex;
+    gap: 5px;
+    padding: 0em 0.8em;
+   
+  
+}
+.title-icon-div{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-icon{
+    
+    width: 20px ;
+    height: 20px;
+
+}
+
+/* tag container styling */
+
+.tag-container{
+    display: flex;
+    gap: 5px;
+    padding: 0.5em 0.8em;
+    gap: 0.5em;
+    align-items: center;
+    color: grey;
+}
+.tag-icon-div{
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgb(232, 232, 232) solid;
+    border-radius: 0.2em;
+    width: 30px;
+    height: 30px;
+}
+.tag-icon{
+    
+   width: 20px;
+   height: 20px;
+    opacity: 0.7;
+}
+.tag-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    border: 1px rgb(232, 232, 232) solid;
+    border-radius: 0.3em;
+   padding: 0.3em;
+    background-color: rgb(255, 255, 255);
+
+}
+.tag-circle{
+    width: 13px ;
+    height: 13px;
+    background-color: rgb(186, 186, 186);
+    border-radius: 2em;
+}
+.card-owner{
+    position: relative;
+
+}
+.owner-avatar{
+    border-radius: 50%;
+    width: 25px;
+    object-fit: cover;
+    height: 25px;
+    position: relative;
+    
+}
+
+.availability{
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    background-color: rgb(193, 193, 193);
+    top: 60%;
+    border: 1px white solid;
+    left: 40%;
+    
+    border-radius: 50%;
+    
+    z-index: 1; 
+}
+.availability.available {
+    content: "";
+    position: absolute;
+    width: 10px ;
+    height: 10px;
+    background-color: rgb(0, 137, 0);
+    top: 70%;
+    border: 1px white solid;
+    left: 50%;
+    
+    border-radius: 50%;
+    
+    z-index: 1; 
+    /* Other styles for available user's ::after */
+  }
+

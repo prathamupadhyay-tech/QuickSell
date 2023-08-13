@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-group-conatainer{
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: scroll ;
+    height: 90vh;
+    
+}
+.group-wrapper{
+    
+ 
+    margin-left: 0%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    width: 95%;
+   
+    gap: 1em;
+
+}
+.group-cards-main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.headings{
+
+
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    align-items: center;
+  
+    min-width: 20em;
+
+}
+
+.group-section-div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.group-icons-div{
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    position: relative;
+}
+.group-icons{
+    border-radius: 50%;
+   
+    width: 25px; 
+    height: 25px; 
+    position: relative;
+    object-fit: cover;
+}
+.availability{
+   
+    position: absolute;
+    width: 11px ;
+    height: 11px;
+    background-color: rgb(193, 193, 193);
+    top: 70%;
+    border: 1px white solid;
+    left: 60%;
+    
+    border-radius: 50%;
+    
+    z-index: 1; 
+}
+.availability.available{
+   
+    position: absolute;
+    width: 11px ;
+    height: 11px;
+    background-color: rgb(0, 173, 12);
+    top: 70%;
+    border: 1px white solid;
+    left: 60%;
+    
+    border-radius: 50%;
+    
+    z-index: 1; 
+}
+.data-options-div{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+
+.add-data{
+    background-image: url("../imgs/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    opacity: 0.5;
+    height: 15px;
+}
+.add-data:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.data-options{
+    background-image: url("../imgs/priority-0.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15px;
+    opacity: 0.5;
+    height: 15px;
+}
+.data-options:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
